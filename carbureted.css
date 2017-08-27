@@ -1,0 +1,158 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: helvetica;
+
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+
+}
+
+header {
+  padding: 10px;
+  background: grey;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+nav {
+  list-style: none;
+  width: 200px;
+  min-height: 900px;
+  float: left;
+  background-color: #222 ;
+  margin-right: 20px;
+  border-style: solid;
+  border-width: 5px;
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 40px;
+}
+
+section {
+    width: 30%;
+  float: left;
+  padding-left: 20%;
+  text-align: center;
+
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+aside {
+  width: 160px;
+  min-height: 860px;
+  padding: 20px;
+  float: right;
+  background: #222;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  color: white;
+}
+
+footer {
+  clear: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 10px;
+  background: grey;
+  text-align: center;
+}
+
+/* Hiding the button */
+input {
+  display: none;
+  visibility: hidden;
+}
+
+/* text label color/formatting button */
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #FFF;
+}
+/* Button hover color */
+label:hover {
+  color: #FFF;
+}
+/* Nitro button */
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+/* Turbo button */
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+
+#toggle:checked ~ #expand {
+  height: 250px;
+}
+#toggle:checked ~ label::before {
+  content: "-";
+}
+/* Supercharge button */
+#expand2 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+
+#toggle2:checked ~ #expand2 {
+  height: 250px;
+}
+#toggle2:checked ~ label::before {
+  content: "-";
+}
+/* Nitro button */
+#expand3 {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #FFF;
+}
+
+#toggle3:checked ~ #expand3 {
+  height: 250px;
+}
+#toggle3:checked ~ label::before {
+  content: "-";
+}
